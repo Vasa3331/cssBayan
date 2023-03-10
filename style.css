@@ -13,31 +13,34 @@ body {
     max-width: 600px;
 }
 
-.ccordion-item {
+.accordion-item {
     position: relative;
     margin-bottom: 20px;
 }
 
-.ccordion-item__input {
+.accordion-item__input {
     position: absolute;
     top: 0;
     left: 0;
     opacity: 0;
+    cursor: pointer;
 }
 
-.ccordion-item__trigger {
+.accordion-item__trigger {
     display: block;
     padding: 20px;
     border: 1px solid black;
+    cursor: pointer;
 }
 
-.ccordion-item__content {
+.accordion-item__content {
     padding: 20px;
     border: 1px solid black;
     border-top: none;
     display: none;
 }
 
-.ccordion-item__input:checked ~ .ccordion-item__content {
+.accordion-item__input:checked ~ .accordion-item__content {
     display: block;
+    cursor: pointer;
 }
