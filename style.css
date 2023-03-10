@@ -15,7 +15,7 @@ body {
 
 .accordion-item {
     position: relative;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .accordion-item__input {
@@ -28,6 +28,7 @@ body {
 
 .accordion-item__trigger {
     display: block;
+    font-size: 16px;
     padding: 20px;
     border: 1px solid black;
     cursor: pointer;
@@ -64,4 +65,12 @@ body {
     visibility: visible;
     opacity: 1;
     height: 100%; 
+}
+
+.accordion-item__input:hover ~ .accordion-item__trigger {
+    font-size: 20px;
+}
+
+.accordion-item__input:checked ~ .accordion-item__trigger {
+    font-size: 20px;
 }
