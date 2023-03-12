@@ -96,3 +96,46 @@ body {
     background-image: url(../cssBayan/assets/arrow_up.png);
 }
 
+@media (min-width: 820px) {
+    .wrapper {
+        max-width: 820px;
+    }
+    .accordion-item__trigger {
+        font-size: 16px;
+    }
+    .accordion-item__input:hover ~ .accordion-item__trigger {
+        font-size: 20px;
+    }
+    
+    .accordion-item__input:checked ~ .accordion-item__trigger {
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 1920px) {
+    .wrapper {
+        max-width: 1920px;
+    }
+    .accordion-item__input {
+        cursor: pointer;
+    }
+    .accordion-item__trigger {
+        font-size: 24px;
+        cursor: pointer;
+    }
+    .accordion-item__input:checked ~ .accordion-item__content {
+        cursor: pointer;
+    }
+    
+    .accordion-item__input:hover ~ .accordion-item__content {
+        cursor: pointer;
+    }
+    
+    .accordion-item__input:hover ~ .accordion-item__trigger {
+        font-size: 30px;
+    }
+    
+    .accordion-item__input:checked ~ .accordion-item__trigger {
+        font-size: 30px;
+    }
+}
